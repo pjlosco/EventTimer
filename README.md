@@ -42,3 +42,4 @@ EventTimer
 - save more than one race at a time
 - sync data
 - chip syncing
+- [get schwifty](https://www.youtube.com/watch?v=4ctK1aoWuqY)
