@@ -1,12 +1,13 @@
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+# OS
 .DS_Store
-/build
-app/app-release.apk
-*.iml
-keystore.jks
+
+# Legacy Android (android-legacy) build outputs
+android-legacy/build
+android-legacy/.gradle
+android-legacy/local.properties
+android-legacy/app/build
+android-legacy/**/*.iml
 .idea/
-*/*.iml
-app/build
+*.jks
+
+# Trotter lives in trotter/ — its .gitignore covers node_modules, .expo, etc.

@@ -1,44 +1,33 @@
-EventTimer
-==========
+# Trotter
 
-# Participant Listing:
-* list all entrants in the race.
-* Order by name or bib number
-* Add new button (Navigates to ParticipantEntry)
-* Lookup button
+**Trotter** is a simple, pocket-sized race timing app. Time 5ks, marathons, and more from your phone—no bulky equipment.
 
-## Participant entry:
-- Form for entering participant
-    - First name
-    - Last name
-    - Age
-    - Bib #
-    - Sex
-- Save button
-- Cancel button
+- **App**: React Native (Expo), TypeScript
+- **Planning**: See [docs/](./docs/)
 
-# Timer:
-- Clock with seconds animated
-- Start button
-- Stop button with warning to reset
-- Stamp button to log time
-- Remove last time stamp button
-- Manually add time
+## Project structure
 
-# Bib Ordering:
-- Enter bib dialog
-- drag and drop order
-- remove bib
-- warning if bib entered is already in system. allow override
+```
+EventTimer/           # repo root
+├── trotter/          # Trotter app (Expo)
+├── docs/             # planning & design
+└── android-legacy/   # old EventTimer Android app (reference only)
+```
 
-# Results:
-- TODO for brian
+## Run the app
 
+```bash
+cd trotter
+npm run ios      # iOS Simulator
+npm run android  # Android emulator
+npm run web      # web (dev)
+```
 
-### Future features
-- import xml
-- share results (Email)
-- create account
-- save more than one race at a time
-- sync data
-- chip syncing
+## Development
+
+- **Milestone 1**: Project setup + Events list ← *you are here*
+- See [docs/05-MVP-SCOPE.md](./docs/05-MVP-SCOPE.md) for full roadmap.
+
+## Legacy
+
+The original Android app lives in `android-legacy/`. It’s kept for reference only. You can delete that folder once Trotter is stable and you no longer need it (see [docs/05-MVP-SCOPE.md](./docs/05-MVP-SCOPE.md)).
